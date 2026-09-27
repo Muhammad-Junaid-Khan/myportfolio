@@ -247,7 +247,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: linear-gradient(135deg, rgba(5, 13, 24, 0.75) 0%, rgba(20, 157, 221, 0.35) 100%);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1103,4 +1103,102 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+/*--------------------------------------------------------------
+# Custom Enhancements — added for Muhammad Junaid Khan
+--------------------------------------------------------------*/
+#header .profile .header-role {
+  color: #b8c1cc;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+#header .download-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: 2px solid #149ddd;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#header .download-cv-btn:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+#hero .hero-cta {
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+#hero .btn-hero {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 0 8px 10px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+#hero .btn-hero-primary {
+  background: #149ddd;
+  color: #fff;
+  border: 2px solid #149ddd;
+}
+
+#hero .btn-hero-primary:hover {
+  background: #0f7fb8;
+  border-color: #0f7fb8;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#hero .btn-hero-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#hero .btn-hero-outline:hover {
+  background: #fff;
+  color: #050d18;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  #hero .btn-hero {
+    padding: 10px 22px;
+    font-size: 13px;
+    margin: 0 5px 10px;
+  }
+}
+
+.services .icon-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.resume .resume-title {
+  margin-top: 30px;
+}
+
+.resume .resume-item:first-of-type {
+  margin-top: 0;
 }
